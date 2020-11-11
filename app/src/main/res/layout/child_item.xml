@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/orderNo1"
+        layout="@layout/child_sub_item" />
+    <include
+        android:id="@+id/orderNo2"
+        layout="@layout/child_sub_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orderNo1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

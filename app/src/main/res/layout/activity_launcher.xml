@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="30dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/welcomeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcomeTitle"
+        android:src="@drawable/brainvira_spash" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textStyle="italic"
+        android:text="@string/welcomeText"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/errorEditTextFieldName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_blue"
+            android:textSize="9sp"
+            android:visibility="invisible"
+            android:fontFamily="@font/helvetica_neue"/>
+
+    <EditText
+            android:id="@+id/errorEditTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/error_edittext_selector"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingBottom="6dp"
+            android:imeOptions="actionNext"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/edittext_hint_textcolor"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:fontFamily="@font/helvetica_neue"
+            tools:ignore="MissingPrefix"/>
+
+    <TextView
+            android:id="@+id/errorEditTextError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/actionbar_red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            android:fontFamily="@font/helvetica_neue"
+    />
+
+</LinearLayout>

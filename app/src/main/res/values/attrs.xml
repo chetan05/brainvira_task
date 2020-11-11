@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="KGErrorEditText">
+        <attr name="fieldName" format="string" />
+        <attr name="letterSpacing" format="float" />
+        <attr name="textSize" format="float" />
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+</resources>

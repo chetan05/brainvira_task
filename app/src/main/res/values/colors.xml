@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#cc0033</color>
+    <color name="colorPrimary">#cc0033</color>
+    <color name="colorPrimaryDark">#A80E25</color>
+    <color name="edittext_hint_textcolor_search">#808284</color>
+    <color name="colorCCCCCC">#cccccc</color>
+    <color name="text_blue">#2196F3</color>
+    <color name="actionbar_red">#cc0033</color>
+    <color name="edittext_hint_textcolor">#c3c3c3</color>
+    <color name="inactive_edittext_bar">#808080</color>
+</resources>

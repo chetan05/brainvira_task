@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainLay1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/aud"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay1"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/bgn"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay2"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/brl"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay3"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/cad"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay1"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/chf"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay5"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay1"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/cny"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay6"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay1"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/czk"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay7"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay1"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/dkk"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay9"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay5"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/eur"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay9"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay5"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/gbp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay11"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay10"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay5"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/hkd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay12"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay11"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay5"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/hrk"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay13"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay9"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/huf"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay14"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay13"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay9"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/idr"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay15"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay14"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay9"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/ils"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay16"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay15"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay9"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/inr"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay17"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay13"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/isk"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay18"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay17"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay13"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/jpy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay19"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay18"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay13"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/krw"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay20"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay19"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay13"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/mxn"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay21"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay17"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/myr"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay22"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay21"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay17"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/nok"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay23"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay22"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay17"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/nzd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay24"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay23"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay17"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/php"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay25"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay21"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/pln"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay26"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay25"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay21"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/ron"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay27"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay26"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay21"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/rub"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay28"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay27"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay21"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/sek"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay29"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay28"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/sgd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay30"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay29"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay28"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/thb"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay31"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay30"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay28"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/trya"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay32"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/mainLay31"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay28"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/usd"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLay33"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLay29"
+        app:layout_constraintWidth_percent="0.25">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_condensed_bold"
+            android:gravity="center"
+            android:text="@string/zar"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtItemDateVal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtData33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/helvetica_neue_medium"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
